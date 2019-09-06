@@ -1,0 +1,20 @@
+class PhoneBook():
+    def __init__(self):
+        self.__entries = {}
+    
+    def add(self, name, phone_number):
+        self.__entries [name] = phone_number
+    
+    def get(self, name):
+        if name in self.__entries:
+            return self.__entries [name]
+        else:
+            return None
+
+book = PhoneBook()
+book.add ("Dorn","+098123523")
+book.add ("Meyer", "+089342312")
+book.add ("Messner", "+097657230")
+book.add ("Bumskopp", "+097886654")
+
+print(book)
